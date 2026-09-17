@@ -1,7 +1,7 @@
 # Ubuntu Bakım Aracı
 
 APT, Snap ve Flatpak güncellemelerini ve sistem temizliği görevlerini (öksüz paketler,
-önbellekler, eski sistem günlükleri, thumbnail önbelleği) tek bir GTK4 / Libadwaita
+önbellekler, eski sistem günlükleri, thumbnail önbelleği, çöp kutusu) tek bir GTK4 / Libadwaita
 penceresinden yürüten basit bir masaüstü bakım uygulaması.
 
 ## Özellikler

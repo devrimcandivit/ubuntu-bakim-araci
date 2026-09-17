@@ -84,6 +84,7 @@ nesnesi (`Task`) ile tanımlanır: etiket, komut, root gerekip gerekmediği ve
 | 7 | Kullanılmayan Flatpak çalışma zamanlarını kaldır | `flatpak uninstall --unused -y` | Hayır | `flatpak` |
 | 8 | 7 günden eski sistem günlüklerini temizle | `journalctl --vacuum-time=7d` | Evet | — |
 | 9 | Kullanıcı thumbnail önbelleğini temizle | `rm -rf "$HOME/.cache/thumbnails"/*` | Hayır | — |
+| 10 | Çöp kutusunu boşalt | `~/.local/share/Trash/{files,info}` klasörlerini silip boş olarak yeniden oluşturur | Hayır | — |
 
 **Sistemde kurulu olmayan araç** (ör. flatpak yoksa) gerektiren bir görev,
 otomatik atlanır ve log alanına `[Atlandı] ...` notu düşülür — hata vermez.

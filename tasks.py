@@ -85,4 +85,16 @@ TASKS = [
         command='rm -rf "$HOME/.cache/thumbnails"/*',
         needs_root=False,
     ),
+    Task(
+        id="trash_empty",
+        label="Çöp kutusunu boşalt",
+        # XDG Trash klasörünü tamamen silip boş olarak yeniden oluşturur;
+        # glob'a bağlı 'rm -rf .../*' kullanılmıyor çünkü çöp kutusu boşsa
+        # eşleşme olmayıp hataya düşebilir.
+        command=(
+            'rm -rf "$HOME/.local/share/Trash/files" "$HOME/.local/share/Trash/info" && '
+            'mkdir -p "$HOME/.local/share/Trash/files" "$HOME/.local/share/Trash/info"'
+        ),
+        needs_root=False,
+    ),
 ]
