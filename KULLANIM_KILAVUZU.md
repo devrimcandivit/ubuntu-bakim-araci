@@ -165,6 +165,7 @@ ubuntu-bakim-araci/
 ├── tasks.py                      # Görev tanımları (etiket, komut, root gereksinimi)
 ├── runner.py                     # Komutları arka plan thread'inde çalıştıran motor
 ├── ubuntu-bakim-araci.desktop    # Uygulama menüsü kısayolu şablonu
+├── icon.svg                      # Uygulama simgesi (dişli + onay rozeti)
 ├── README.md                     # Kurulum ve hızlı başlangıç
 └── KULLANIM_KILAVUZU.md          # Bu dosya — ayrıntılı kullanım ve teknik notlar
 ```

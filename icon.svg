@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect x="0" y="0" width="128" height="128" rx="26" fill="#3584e4"/>
+
+  <!-- Dişli (sistem/bakım sembolü) -->
+  <g fill="#ffffff">
+    <g>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(0 56 56)"/>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(45 56 56)"/>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(90 56 56)"/>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(135 56 56)"/>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(180 56 56)"/>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(225 56 56)"/>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(270 56 56)"/>
+      <rect x="49" y="10" width="14" height="18" rx="3" transform="rotate(315 56 56)"/>
+    </g>
+    <circle cx="56" cy="56" r="28"/>
+  </g>
+  <circle cx="56" cy="56" r="11" fill="#3584e4"/>
+
+  <!-- "Tamamlandı / temiz" rozeti -->
+  <circle cx="92" cy="92" r="21" fill="#2ec27e" stroke="#3584e4" stroke-width="3"/>
+  <path d="M83 92 L90 99 L102 85" fill="none" stroke="#ffffff" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
