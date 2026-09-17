@@ -20,6 +20,25 @@ penceresinden yürüten basit bir masaüstü bakım uygulaması.
 - İlerleme çubuğu ve durum etiketi hangi görevin o an çalıştığını gösterir.
 - "Durdur" butonu, o an çalışan komutu sonlandırıp kalan görevleri iptal eder.
 
+## Desteklenen Linux Dağıtımları
+
+Bu uygulama **APT tabanlı Debian/Ubuntu ailesi** için tasarlanmıştır: Ubuntu,
+Debian, Linux Mint, Pop!_OS, Zorin OS, elementary OS, Kubuntu/Xubuntu/Lubuntu
+gibi türevler. Fedora, openSUSE, Arch gibi diğer ailelerde **olduğu gibi
+çalışmaz**, çünkü bazı görevler doğrudan bu ailenin araçlarına bağlıdır:
+
+| Bağımlılık | Kullanıldığı yer | Kapsam |
+|---|---|---|
+| `apt` | güncelleme, autoremove, temizlik | Sadece Debian/Ubuntu ailesi (Fedora'da `dnf`, Arch'ta `pacman`, openSUSE'de `zypper` kullanılır) |
+| `snap` | snap güncelleme/temizlik | Ubuntu'da hazır gelir; başka dağıtımlarda kurulu olsa bile davranışı değişebilir |
+| `flatpak` | flatpak güncelleme/temizlik | Dağıtımdan bağımsız — kuruluysa her yerde çalışır |
+| `journalctl` | eski günlükleri temizleme | systemd kullanan tüm modern dağıtımlarda var (Ubuntu, Debian, Fedora, Arch dahil) |
+| GTK4 + Libadwaita | arayüz | Teknik olarak her dağıtımda kurulabilir, paket adları değişir |
+
+Özetle: arayüz ve `flatpak`/`journalctl` adımları teorik olarak başka
+dağıtımlarda da çalışabilir, ama `apt` görevleri (uygulamanın çekirdek
+işlevi) sadece Debian/Ubuntu ailesinde anlamlıdır.
+
 ## Gereksinimler ve Kurulum (Ubuntu)
 
 Aşağıdaki sistem paketlerini kurun (pip gerekmez, PyGObject sistem paketi olarak gelir):
@@ -68,6 +87,8 @@ adıyla görünüp doğrudan başlatılabilir.
 | `tasks.py` | Bakım görevlerinin tanımları (etiket, komut, root gerekliliği) |
 | `runner.py` | Görevleri arka plan thread'inde çalıştırıp arayüze aktaran modül |
 | `ubuntu-bakim-araci.desktop` | Uygulama menüsü kısayolu şablonu |
+| `icon.svg` | Uygulama simgesi |
+| `KULLANIM_KILAVUZU.md` | Ayrıntılı kullanım kılavuzu ve teknik notlar |
 
 ## Güvenlik notları
 
